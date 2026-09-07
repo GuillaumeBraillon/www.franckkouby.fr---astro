@@ -1,0 +1,37 @@
+---
+interface Props {
+  href?: string;
+  variant?: "primary" | "secondary";
+  external?: boolean;
+  onclick?: string;
+}
+
+const { href, variant = "secondary", external = false, onclick } = Astro.props;
+---
+
+{
+  href ? (
+    <a
+      href={href}
+      target={external ? "_blank" : undefined}
+      rel={external ? "noopener noreferrer" : undefined}
+      class:list={[
+        "gh-button",
+        variant === "primary" ? "gh-button--primary" : "gh-button--secondary",
+      ]}
+    >
+      <slot />
+    </a>
+  ) : (
+    <button
+      type="button"
+      class:list={[
+        "gh-button",
+        variant === "primary" ? "gh-button--primary" : "gh-button--secondary",
+      ]}
+      onclick={onclick}
+    >
+      <slot />
+    </button>
+  )
+}

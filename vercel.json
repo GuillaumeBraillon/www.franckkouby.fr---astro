@@ -1,0 +1,124 @@
+{
+  "redirects": [
+    {
+      "source": "/album-de-franck-kouby/",
+      "destination": "/pages/album-de-franck-kouby",
+      "permanent": true
+    },
+    {
+      "source": "/album-de-franck-kouby",
+      "destination": "/pages/album-de-franck-kouby",
+      "permanent": true
+    },
+    {
+      "source": "/franck-kouby-officiel/",
+      "destination": "/pages/franck-kouby-officiel",
+      "permanent": true
+    },
+    {
+      "source": "/franck-kouby-officiel",
+      "destination": "/pages/franck-kouby-officiel",
+      "permanent": true
+    },
+    {
+      "source": "/blog/",
+      "destination": "/articles",
+      "permanent": true
+    },
+    {
+      "source": "/blog",
+      "destination": "/articles",
+      "permanent": true
+    },
+    {
+      "source": "/musique/",
+      "destination": "/articles",
+      "permanent": true
+    },
+    {
+      "source": "/musique",
+      "destination": "/articles",
+      "permanent": true
+    },
+    {
+      "source": "/video-de-bye-bye-franck-kouby/",
+      "destination": "/articles/video-de-bye-bye-franck-kouby",
+      "permanent": true
+    },
+    {
+      "source": "/video-de-bye-bye-franck-kouby",
+      "destination": "/articles/video-de-bye-bye-franck-kouby",
+      "permanent": true
+    },
+    {
+      "source": "/video-de-las-pale-baw-franck-kouby/",
+      "destination": "/articles/video-de-las-pale-baw-franck-kouby",
+      "permanent": true
+    },
+    {
+      "source": "/video-de-las-pale-baw-franck-kouby",
+      "destination": "/articles/video-de-las-pale-baw-franck-kouby",
+      "permanent": true
+    },
+    {
+      "source": "/video-de-man-peke-baw-an-bon-moment-2019/",
+      "destination": "/articles/video-de-man-peke-baw-an-bon-moment-2019",
+      "permanent": true
+    },
+    {
+      "source": "/video-de-man-peke-baw-an-bon-moment-2019",
+      "destination": "/articles/video-de-man-peke-baw-an-bon-moment-2019",
+      "permanent": true
+    },
+    {
+      "source": "/video-de-manon-franck-kouby/",
+      "destination": "/articles/video-de-manon-franck-kouby",
+      "permanent": true
+    },
+    {
+      "source": "/video-de-manon-franck-kouby",
+      "destination": "/articles/video-de-manon-franck-kouby",
+      "permanent": true
+    },
+    {
+      "source": "/video-de-oh-mali-oh-bamako-franck-kouby/",
+      "destination": "/articles/video-de-oh-mali-oh-bamako-franck-kouby",
+      "permanent": true
+    },
+    {
+      "source": "/video-de-oh-mali-oh-bamako-franck-kouby",
+      "destination": "/articles/video-de-oh-mali-oh-bamako-franck-kouby",
+      "permanent": true
+    },
+    {
+      "source": "/video-de-tifi-live-franck-kouby/",
+      "destination": "/articles/video-de-tifi-live-franck-kouby",
+      "permanent": true
+    },
+    {
+      "source": "/video-de-tifi-live-franck-kouby",
+      "destination": "/articles/video-de-tifi-live-franck-kouby",
+      "permanent": true
+    },
+    {
+      "source": "/concert-de-franck-kouby-co-dimanche-17-novembre-2019-a-20h00/",
+      "destination": "/articles/concert-de-franck-kouby-co-dimanche-17-novembre-2019-a-20h00",
+      "permanent": true
+    },
+    {
+      "source": "/concert-de-franck-kouby-co-dimanche-17-novembre-2019-a-20h00",
+      "destination": "/articles/concert-de-franck-kouby-co-dimanche-17-novembre-2019-a-20h00",
+      "permanent": true
+    },
+    {
+      "source": "/interview-de-franck-kouby-dans-100-passion-live-sur-france-bleu-isere/",
+      "destination": "/articles/interview-de-franck-kouby-dans-100-passion-live-sur-france-bleu-isere",
+      "permanent": true
+    },
+    {
+      "source": "/interview-de-franck-kouby-dans-100-passion-live-sur-france-bleu-isere",
+      "destination": "/articles/interview-de-franck-kouby-dans-100-passion-live-sur-france-bleu-isere",
+      "permanent": true
+    }
+  ]
+}

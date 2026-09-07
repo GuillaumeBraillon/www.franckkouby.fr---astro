@@ -1,0 +1,27 @@
+---
+import { getEntry, render } from "astro:content";
+import ContentHeader from "../../components/ContentHeader.astro";
+import MarkdownImages from "../../components/MarkdownImages.astro";
+import Layout from "../../layouts/Layout.astro";
+const id = Astro.params.id;
+if (!id) {
+  return Astro.redirect("/404");
+}
+
+const page = await getEntry("pages", id);
+if (!page) {
+  return Astro.redirect("/404");
+}
+
+const { Content } = await render(page);
+---
+
+<Layout title={page.data.title} description={page.data.description}>
+  <article class="space-y-6">
+    <ContentHeader href="/" label="Accueil" current={page.id} title={page.data.title} />
+    <div class="prose prose-sm max-w-none text-[#1f2328] space-y-4 markdown-body">
+      <Content />
+    </div>
+    <MarkdownImages />
+  </article>
+</Layout>

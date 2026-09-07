@@ -1,0 +1,12 @@
+---
+interface Props {
+  collectionHref: string;
+  collectionLabel: string;
+}
+
+const { collectionHref, collectionLabel } = Astro.props as Props;
+---
+
+<div class="flex flex-wrap items-center gap-2 text-sm text-[#636c76] mb-2">
+  <a href={collectionHref} class="text-[#0969da] hover:underline">{collectionLabel}</a>
+</div>
