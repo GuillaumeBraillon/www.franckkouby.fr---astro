@@ -2,6 +2,7 @@
 import "../styles/global.css";
 import { contactLinks, site } from "../data/site";
 import SpeedInsights from "@vercel/speed-insights/astro";
+import Analytics from "@vercel/analytics/astro";
 
 interface Props {
   title?: string;
@@ -101,5 +102,6 @@ const imageUrl = new URL(image, Astro.site ?? "https://www.franckkouby.fr").toSt
       </nav>
     </div>
   </footer>
+  <Analytics />
   <SpeedInsights />
 </html>
