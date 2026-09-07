@@ -3,12 +3,20 @@ import { getEntry, render } from "astro:content";
 import ContentHeader from "../../components/ContentHeader.astro";
 import MarkdownImages from "../../components/MarkdownImages.astro";
 import Layout from "../../layouts/Layout.astro";
-const id = Astro.params.id;
-if (!id) {
-  return Astro.redirect("/404");
+import { getPublishedCollection } from "../../lib/content";
+
+export const prerender = true;
+
+export async function getStaticPaths() {
+  const pages = await getPublishedCollection("pages");
+  return pages.map((page) => ({
+    params: { id: page.id },
+    props: { page },
+  }));
 }
 
-const page = await getEntry("pages", id);
+const page =
+  Astro.props.page ?? (Astro.params.id ? await getEntry("pages", Astro.params.id) : undefined);
 if (!page) {
   return Astro.redirect("/404");
 }

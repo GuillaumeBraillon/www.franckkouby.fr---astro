@@ -4,14 +4,21 @@ import ContentHeader from "../../components/ContentHeader.astro";
 import MarkdownImages from "../../components/MarkdownImages.astro";
 import { getEntry, render } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
-import { formatDateFr } from "../../lib/content";
+import { formatDateFr, getPublishedCollection } from "../../lib/content";
 
-const id = Astro.params.id;
-if (!id) {
-  return Astro.redirect("/404");
+export const prerender = true;
+
+export async function getStaticPaths() {
+  const articles = await getPublishedCollection("articles");
+  return articles.map((article) => ({
+    params: { id: article.id },
+    props: { article },
+  }));
 }
 
-const article = await getEntry("articles", id);
+const article =
+  Astro.props.article ??
+  (Astro.params.id ? await getEntry("articles", Astro.params.id) : undefined);
 if (!article) {
   return Astro.redirect("/404");
 }
